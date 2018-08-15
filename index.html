@@ -13,7 +13,7 @@
                 </a>
                 <ul class="main-navigation">
                     <li><a href="#">Каталог</a>
-                        <ul class="sub-menu">
+                        <ul class="modal sub-menu">
                             <li class="imp-item">Новинки</li>
                             <li><a href="catolog-creamy.html">Сливочное</a></li>
                             <li><a href="#">Щербеты</a></li>
@@ -26,19 +26,24 @@
                 </ul>
            </nav>
                 
-           <div class="search"><a href="#"></a>
-                <section class="sub-search">
-                    <!-- Здесь будет форма -->
-                </section>
+           <div class="search">
+               <span class="header-button"></span>
+                <form class="modal sub-search" action="#" method="get">
+                    <label></label>
+                    <input type="search" name="search" placeholder="Что ищем?">
+                </form>
            </div>
                
-           <div class="enter"><a href="#">Вход</a>
-                <section class="sub-login">
-                    <!-- Здесь будет форма -->
-                    <a class="button" href="#">Форма обратной связи</a>
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Новая регестрация</a>
-                </section>
+           <div class="enter">
+               <span class="header-button">Вход</span>
+                <form class="modal sub-login" action="#" method="post">
+                    <label>Вход</label>
+                    <input type="email" name="email" placeholder="Электронная почта">
+                    <input type="password" name="password" placeholder="Пароль">
+                    <a class="login-info" href="#">Забыли пароль?</a>
+                    <a class="login-info" href="#">Новая регестрация</a>
+                    <input class="button" type="submit" value="Войти">
+                </form>
            </div>
           
            <div class="basket">
@@ -81,42 +86,42 @@
                   <a class="switch switch-first" href="#item-1"></a>
                   <a class="switch switch-second" href="#item-2"></a>
               </div>
-              <a class="button" href="#">Давайте оба!</a>
+              <input class="button" type="submit" value="Давайте оба!">
           </div>
           
           <section class="offers">
               <div class="raspberries">
                   <h2>Малинка даром!</h2>
                   <p>При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно</p>
-                  <a class="button" href="#">Хочу варенье!</a>
+                  <input class="button" type="submit" value="Хочу варенье!">
               </div>
               
               <div class="chocolate">
                   <h2>Шоколадки даром!</h2>
                   <p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
-                  <a class="button" href="#">Хочу шоколадки!</a>
+                  <input class="button" type="submit" value="Хочу шоколадки!">
               </div>
           </section>>
           
           <div class="icecream">
               <ul>
                   <li>
-                        <img src="img/1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                        <img src="img/icecream-with-orange-jam.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                         <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
                         <p>310 <span>/кг</span></p>
                   </li>
                   <li>
-                        <img src="img/2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                        <img src="img/icecream-with-coffee-and-chocolate.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                         <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
                         <p>380 <span>/кг</span></p>
                   </li>
                   <li>
-                        <img src="img/3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                        <img src="img/icecream-with-strawberry-and-white-chocolate.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                         <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
                         <p>355 <span>/кг</span></p>
                   </li>
                   <li>
-                        <img src="img/4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                        <img src="img/icecream-cremebrulee-with-caramel-gravy.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                         <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
                         <p>415 <span>/кг</span></p>
                   </li>
@@ -141,13 +146,13 @@
               <div class="dispatch">
                   <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                   <span></span>
-                  <a class="button" href="#">Отправить</a>
+                  <input class="button" type="submit" value="Отправить">
               </div>
           </section>
           
           <div class="map">
-              <!--В ТЗ указано, что карта должна быть по ширене страницы. Но я не могу понять, почему валидатору не нравятся процентное соотношение. Вроде, я имею право задавать размеры в процентном соотношении. -->
-              <img width="100%" src="img/map.png" alt="Карта">
+              <!--Здесь будет карта. -->
+              <span></span>
               <div class="contacts">
                   <p>Адрес главного офиса<br>
                       и офлайн-магазина:</p>
@@ -157,7 +162,7 @@
                           <b class="main-contacts">8 812 450 25 25</b><br>
                          (с 10 до 20 ежедневно)
                       </span>
-                      <a class="button" href="#">Форма обратной связи</a>
+                      <input class="button" type="submit" value="Форма обратной связи">
               </div>
           </div>
              
@@ -189,12 +194,14 @@
 
       </footer>
       
-      <section class="mobal modal-feedback">
+      <form class="mobal modal-feedback" action="#" method="post">
           <h2>Мы вам оязательно ответим!</h2>
-          <!-- Здесь будет форма -->
-          <a class="button" href="#">Отправить</a>
+          <input class="userdata" type="text" name="username" placeholder="Как вас зовут?">
+          <input class="userdata" type="email" name="email" placeholder="Ваша почта для ответа?">
+          <input type="text" class="textarea" name="anytext" placeholder="Напишите что-нибудь..." >
+          <input class="button" type="submit"  value="Отправить">
           <span class="modal-close">x</span>
-      </section>
+      </form>
 
   </body>
 </html>

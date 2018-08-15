@@ -25,19 +25,24 @@
                 </ul>
            </nav>
                 
-           <div class="search"><a href="#"></a>
-                <section class="sub-search">
-                    <!-- Здесь будет форма -->
-                </section>
+           <div class="search">
+               <span class="header-button"></span>
+                <form class="modal sub-search" action="#" method="get">
+                    <label></label>
+                    <input type="search" name="search" placeholder="Что ищем?">
+                </form>
            </div>
                
-           <div class="enter"><a href="#">Вход</a>
-                <section class="sub-login">
-                    <!-- Здесь будет форма -->
-                    <a class="botton" href="#">Форма обратной связи</a>
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Новая регестрация</a>
-                </section>
+           <div class="enter">
+               <span class="header-button">Вход</span>
+                <form class="modal sub-login" action="#" method="post">
+                    <label>Вход</label>
+                    <input type="email" name="email" placeholder="Электронная почта">
+                    <input type="password" name="password" placeholder="Пароль">
+                    <a class="login-info" href="#">Забыли пароль?</a>
+                    <a class="login-info" href="#">Новая регестрация</a>
+                    <input class="button" type="submit" value="Войти">
+                </form>
            </div>
           
            <span class="basket">
@@ -59,72 +64,73 @@
             </ul>
             
             <h1 class="page-title">Cливочное мороженное</h1>
-            
-            <section class="filters">
-                <h2 class="visually-hidden">Фильтр товаров</h2>
+            <div>
+                <form>
+                    <h2 class="visually-hidden">Фильтр товаров</h2>
                 <!-- Здесь будет форма -->
-            </section>
+                </form>
+            </div>
             
             <div class="catolog-creamy">
                 <h2 class="visually-hidden">Список сливочного мороженного</h2>
                 <ul class="catalog-list">
                     <li>
-                        <img src="img/1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                        <img src="img/icecream-with-orange-jam.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                         <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
                         <p>310 <span>/кг</span></p>
                     </li>
                     <li>
-                        <img src="img/2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                        <img src="img/icecream-with-coffee-and-chocolate.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                         <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
                         <p>380 <span>/кг</span></p>
                     </li>
                     <li>
-                        <img src="img/3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                        <img src="img/icecream-with-strawberry-and-white-chocolate.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                         <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
                         <p>355 <span>/кг</span></p>
                     </li>
                     <li>
-                        <img src="img/4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                        <img src="img/icecream-cremebrulee-with-caramel-gravy.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                         <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
                         <p>415 <span>/кг</span></p>
                     </li>
                     <li>
-                        <img src="img/5.png" width="267" height="267" alt="Сливочное с брусничным джемом">
+                        <img src="img/icecream-with-cranberry-jam.png" width="267" height="267" alt="Сливочное с брусничным джемом">
                         <h3><a href="#">Сливочное с брусничным джемом</a></h3>
                         <p>325 <span>/кг</span></p>
                     </li>
                     <li>
-                        <img src="img/6.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
+                        <img src="img/icecream-with-whole-berries-of-blueberries.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
                         <h3><a href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
                         <p>410 <span>/кг</span></p>
                     </li>
                     <li>
-                        <img src="img/7.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
+                        <img src="img/icecream-with-lemon.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
                         <h3><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
                         <p>375 <span>/кг</span></p>
                     </li>
                     <li>
-                        <img src="img/8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
+                        <img src="img/icecream-with-chocolate.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
                         <h3><a href="#">Сливочное с шоколадной стружкой</a></h3>
                         <p>320 <span>/кг</span></p>
                     </li>
                     <li>
-                        <img src="img/9.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
+                        <img src="img/icecream-with-vanila-and-chocolate.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
                         <h3><a href="#">Сливочно-ванильное с кусочками шоколада</a></h3>
                         <p>440 <span>/кг</span></p>
                     </li>
                     <li>
-                        <img src="img/10.png" width="267" height="267" alt="Сливочное с ментоловым сиропом">
+                        <img src="img/icecream-with-menthol-syrup.png" width="267" height="267" alt="Сливочное с ментоловым сиропом">
                         <h3><a href="#">Сливочное с ментоловым сиропом</a></h3>
                         <p>435 <span>/кг</span></p>
                     </li>
                     <li>
-                        <img src="img/11.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
+                        <img src="img/icecream-with-black-chocolate.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
                         <h3><a href="#">Сливочное с кусочками черного шоколада</a></h3>
                         <p>355 <span>/кг</span></p>
                     </li>
                     <li>
-                        <img src="img/12.png" width="267" height="267" alt="Сливочное с мятным сиропом">
+                        <img src="img/icecream-with-mint-syrup.png" width="267" height="267" alt="Сливочное с мятным сиропом">
                         <h3><a href="#">Сливочное с мятным сиропом</a></h3>
                         <p>420 <span>/кг</span></p>
                     </li>

@@ -24,18 +24,20 @@
                     <li><a href="#">Доставка и оплата</a></li>
                     <li><a href="#">О компании</a></li>
                 </ul>
+          </nav>
+          
+          <div class="custom-menu">
            
-                <ul class="search">
-                    <li><a href="#" class="search-button" aria-label="Поиск"></a>
+                <div class="search">
+                    <a href="#" class="search-button" aria-label="Поиск"></a>
                         <form class="modal sub-search" action="#" method="get">
                             <input type="search" name="search" placeholder="Что ищем?">
                         </form>
-                    </li>
-                </ul>
+                </div>
                
-                <ul class="login">
-                    <li><a class="login-button" href="#" aria-label="Вход">Вход</a></li>
-                </ul>
+                <div class="login">
+                    <a class="login-button" href="#" aria-label="Вход">Вход</a>
+                </div>
                 <div class="modal sub-login">
                     <form  action="#" method="post">
                         <label for="login-email" class="visually-hidden">Электронная почта</label>
@@ -43,20 +45,20 @@
                         <label for="login-password" class="visually-hidden">Пароль</label>
                         <input id="login-password" type="password" name="password" placeholder="Пароль">
                         <a class="login-info" href="#">Забыли пароль?</a>
-                        <a class="login-info" href="#">Новая регестрация</a>
+                        <a class="login-info" href="#">Новая регистрация</a>
                          <button class="button" type="submit">Войти</button>
                     </form>
                 </div>
           
-                <ul class="basket">
-                    <li><a class="basket-button" href="#" aria-label="Корзина">Пусто</a></li>
-                </ul>
+                <div class="basket">
+                    <a class="basket-button" href="#" aria-label="Корзина">Пусто</a>
+                </div>
+           </div>
             
-                <div class="working-info">
+           <div class="working-info">
                     <p class="hours">С 10 до 20, ежедневно</p>
                     <p class="phone">8 812 450 25 25</p>
-                </div>
-            </nav>
+          </div>
       </header>
       
       <main class="container">
@@ -66,40 +68,42 @@
               <div class="carusel-item item-1">
                   <img src="img/icecream-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
                   <p>Крем-брюле и пломбир с малиновым джемом</p>
-                  <button class="carusel-batton checked" type="button"></button>
-                  <button class="carusel-batton" type="button"></button>
-                  <button class="carusel-batton" type="button"></button>
               </div>
               
               <div class="carusel-item item-2">
                   <img src="img/icecream-2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">
                   <p>Шоколадный пломбир и лимонный сорбет</p>
-                  <button class="carusel-batton" type="button"></button>
-                  <button class="carusel-batton checked" type="button"></button>
-                  <button class="carusel-batton" type="button"></button>
               </div>
               
               <div class="carusel-item item-3">
                   <img src="img/icecream-3.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">
                   <p>Пломбир с помадкой и клубничный щербет</p>
-                  <button class="carusel-batton" type="button"></button>
-                  <button class="carusel-batton" type="button"></button>
-                  <button class="carusel-batton checked" type="button"></button>
               </div>
-              <button class="button" type="submit">Давайте оба!</button>
+              
+              <div class="carusel-sabmit-botton">
+                    <a class="button" href="#">Давайте оба!</a>
+              </div>
+              
+              <form class="carusel-radio-bottom" method="post" action="#">
+                    <ul>
+                        <li><input class="visually-hidden carusel-batton" id="filter-first-propose" type="radio" name="icecream-group" value="first-propose" checked></li>
+                        <li><input class="carusel-batton" id="filter-second-propose" type="radio" name="icecream-group" value="second-propose"></li>
+                        <li><input class="carusel-batton" id="filter-third-propose" type="radio" name="icecream-group" value="third-propose"></li>
+                    </ul>
+              </form>
           </figure>
           
           <section class="offers">
               <div class="raspberries">
                   <h2>Малинка даром!</h2>
                   <p>При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно</p>
-                  <button class="button" type="submit">Хочу варенье!</button>
+                  <a class="button" href="#">Хочу варенье!</a>
               </div>
               
               <div class="chocolate">
                   <h2>Шоколадки даром!</h2>
                   <p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
-                  <button class="button" type="submit">Хочу шоколадки!</button>
+                  <a class="button" href="#">Хочу шоколадки!</a>
               </div>
           </section>
           
@@ -141,7 +145,7 @@
           <section class="news">
               <article class="last-news">
                   <h3>Новое в нашем блоге</h3>
-                  <p><a href="#" aria-label="Последнzя новость">10 способов сервировки фруктовых шербетов к столу</a></p>
+                  <p><a href="#" aria-label="Последняя новость">10 способов сервировки фруктовых шербетов к столу</a></p>
               </article>
               <div class="dispatch">
                   <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
@@ -162,7 +166,7 @@
                           <b class="main-contacts">8 812 450 25 25</b><br>
                          (с 10 до 20 ежедневно)
                       </span>
-                  <button class="button" type="submit">Форма обратной связи</button>
+                  <a class="button" href="#">Форма обратной связи</a>
               </div>
           </div>
              
@@ -198,7 +202,7 @@
       </footer>
       
       <form class="mobal modal-feedback" action="#" method="post">
-          <h2>Мы вам оязательно ответим!</h2>
+          <h2>Мы вам обязательно ответим!</h2>
           <label for="feedback-name" class="visually-hidden">Ваше имя</label>
           <input id="feedback-name" type="text" name="username" placeholder="Как вас зовут?">
           <label for="feedback-email" class="visually-hidden">Электронная почта</label>
@@ -206,7 +210,7 @@
           <label for="feedback-text" class="visually-hidden">Напишите что-нибудь</label>
           <textarea id="feedback-text" name="text" placeholder="Напишите что-нибудь..." ></textarea>
           <input class="button" type="submit"  value="Отправить">
-          <button class="modal-close" type="button">Закрыть</button>
+          <a class="modal-close" href="#">Закрыть</a>
       </form>
 
   </body>

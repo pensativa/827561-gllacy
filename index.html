@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
       
       <header class="main-header">
-           <nav>
-                <a class="main-header-logo">
+           <nav class="main-navigation">
+                <a class="main-header-logo" href="#">
                 <img src="img/logo.png" width="154" height="64" alt="Логотип Глэйси">
                 </a>
-                <ul class="main-navigation">
+                <ul class="main-menu">
                     <li><a href="#" aria-label="Каталог">Каталог</a>
                         <ul class="modal sub-menu">
                             <li class="imp-item">Новинки</li>
@@ -27,11 +30,10 @@
           </nav>
           
           <div class="custom-menu">
-           
                 <div class="search">
-                    <a href="#" class="search-button" aria-label="Поиск"></a>
+                    <a href="#" class="search-button" aria-label="Поиск"><div class="search-icon"></div></a>
                         <form class="modal sub-search" action="#" method="get">
-                            <input type="search" name="search" placeholder="Что ищем?">
+                            <input class="search-box" type="search" name="search" placeholder="Что ищем?">
                         </form>
                 </div>
                
@@ -41,9 +43,9 @@
                 <div class="modal sub-login">
                     <form  action="#" method="post">
                         <label for="login-email" class="visually-hidden">Электронная почта</label>
-                        <input id="login-email" type="email" name="email" placeholder="Электронная почта">
+                        <input  class="login-box" id="login-email" type="email" name="email" placeholder="Электронная почта">
                         <label for="login-password" class="visually-hidden">Пароль</label>
-                        <input id="login-password" type="password" name="password" placeholder="Пароль">
+                        <input class="login-box" id="login-password" type="password" name="password" placeholder="Пароль">
                         <a class="login-info" href="#">Забыли пароль?</a>
                         <a class="login-info" href="#">Новая регистрация</a>
                          <button class="button" type="submit">Войти</button>
@@ -57,11 +59,11 @@
             
            <div class="working-info">
                     <p class="hours">С 10 до 20, ежедневно</p>
-                    <p class="phone">8 812 450 25 25</p>
+                    <p class="phone">8 812 450-25-25</p>
           </div>
       </header>
       
-      <main class="container">
+      <main>
           <h1 class="visually-hidden">Gllacy shop</h1>
           
           <figure class="carousel">
@@ -85,10 +87,10 @@
               </div>
               
               <form class="carusel-radio-bottom" method="post" action="#">
-                    <ul>
-                        <li><input class="visually-hidden carusel-batton" id="filter-first-propose" type="radio" name="icecream-group" value="first-propose" checked></li>
-                        <li><input class="carusel-batton" id="filter-second-propose" type="radio" name="icecream-group" value="second-propose"></li>
-                        <li><input class="carusel-batton" id="filter-third-propose" type="radio" name="icecream-group" value="third-propose"></li>
+                    <ul class="carusel-buttons">
+                        <li><button class="carusel-button  checked" type="button" name="icecream-group" value="first-propose"></button></li>
+                        <li><button class="carusel-button" type="button" name="icecream-group" value="second-propose"></button></li>
+                        <li><button class="carusel-button" type="button" name="icecream-group" value="third-propose"></button></li>
                     </ul>
               </form>
           </figure>
@@ -108,33 +110,37 @@
           </section>
           
           <div class="icecream">
-              <ul>
+              <ul class="catalog-list">
                   <li>
-                        <img src="img/icecream-with-orange-jam.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                        <img class="border-img hit" src="img/icecream-with-orange-jam.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                         <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-                        <p>310 <span>/кг</span></p>
+                        <p>310&#x20bd<span>/кг</span></p>
+                        <a class="visability button" href="#">Быстрый просмотр</a>
                   </li>
                   <li>
-                        <img src="img/icecream-with-coffee-and-chocolate.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                        <img class="border-img hit" src="img/icecream-with-coffee-and-chocolate.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                         <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
-                        <p>380 <span>/кг</span></p>
+                        <p>380&#x20bd<span>/кг</span></p>
+                        <a class="visability button" href="#">Быстрый просмотр</a>
                   </li>
                   <li>
-                        <img src="img/icecream-with-strawberry-and-white-chocolate.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                        <img class="border-img hit" src="img/icecream-with-strawberry-and-white-chocolate.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                         <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-                        <p>355 <span>/кг</span></p>
+                        <p>355&#x20bd<span>/кг</span></p>
+                        <a class="visability button" href="#">Быстрый просмотр</a>
                   </li>
                   <li>
-                        <img src="img/icecream-cremebrulee-with-caramel-gravy.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                        <img class="border-img hit" src="img/icecream-cremebrulee-with-caramel-gravy.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                         <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
-                        <p>415 <span>/кг</span></p>
+                        <p>415&#x20bd<span>/кг</span></p>
+                        <a class="visability button" href="#">Быстрый просмотр</a>
                   </li>
               </ul>
           </div>
           
           <div class="advantages">
               <p class="head-advantages">Магазин Глэйси - это онлайн- и офлайн- магазин по продаже мороженого собственного производства на развес</p>
-              <ul>
+              <ul class="item-advantages">
                   <li>Все наше мороженное изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</li>
                   <li>Для приготовления мороженного используется настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
                   <li>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
@@ -149,7 +155,7 @@
               </article>
               <div class="dispatch">
                   <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                  <input type="email" name="email" placeholder="Электронная почта">
+                  <input class="email-box" type="email" name="email" placeholder="Электронная почта">
                   <button class="button" type="submit">Отправить</button>
               </div>
           </section>
@@ -160,12 +166,12 @@
               <div class="contacts">
                   <p>Адрес главного офиса<br>
                       и офлайн-магазина:</p>
-                  <span class="main-contacts">ул.Большая Конюшенная<br>
-                      19/8, Санкт-Петербург</span>
-                      <span>Для заказов по телефону:<br>
-                          <b class="main-contacts">8 812 450 25 25</b><br>
+                  <p class="main-contacts">ул.Большая Конюшенная<br>
+                      19/8, Санкт-Петербург</p>
+                      <p>Для заказов по телефону:<br>
+                          <span class="main-contacts">8 812 450 25 25</span><br>
                          (с 10 до 20 ежедневно)
-                      </span>
+                      </p>
                   <a class="button" href="#">Форма обратной связи</a>
               </div>
           </div>
@@ -175,18 +181,18 @@
       <footer>
           <div class="footer-social">
               <h3 class="visually-hidden">Социальные сети</h3>
-                <ul>
-                    <li><a class="social-button-tw" href="#" aria-label="Мы в Твитере">Твитер</a></li>
-                    <li><a class="social-button-inst" href="#" aria-label="Мы в Инстаграме">Инстаграм</a></li>
-                    <li><a class="social-button-fb" href="#" aria-label="Мы в Фэйсбуке">Фэйсбук</a></li>
-                    <li><a class="social-button-vk" href="#" aria-label="Мы в Вконтакте">Вконтакте</a></li>
-            </ul>
+              <ul class="social-buttons">
+                    <li><a class="visually-hidden social-button" href="#" aria-label="Мы в Твитере">Твитер<div class="social-button-tw"></div></a></li>
+                    <li><a class="visually-hidden social-button" href="#" aria-label="Мы в Инстаграме">Инстаграм<div class="social-button-inst"></div></a></li>
+                    <li><a class="visually-hidden social-button" href="#" aria-label="Мы в Фэйсбуке">Фэйсбук<div class="social-button-fb"></div></a></li>
+                    <li><a class="visually-hidden social-button" href="#" aria-label="Мы в Вконтакте">Вконтакте<div class="social-button-vk"></div></a></li>
+                </ul>
           </div>
           
           <div class="footer-info">
               <h3 class="visually-hidden">Дополнительная информация</h3>
-                <ul>
-                    <li><a class="for-suppliers" href="#">Для поставщиков</a></li>
+                <ul class="sub-info">
+                    <li><a class="for-suppliers" href="#"><b>Для поставщиков</b></a></li>
                     <li><a href="#">О производстве</a></li>
                     <li><a href="#">Наши документы</a></li>
                     <li><a href="#">Экологические стандарты</a></li>
@@ -204,13 +210,13 @@
       <form class="mobal modal-feedback" action="#" method="post">
           <h2>Мы вам обязательно ответим!</h2>
           <label for="feedback-name" class="visually-hidden">Ваше имя</label>
-          <input id="feedback-name" type="text" name="username" placeholder="Как вас зовут?">
+          <input class="info-box" id="feedback-name" type="text" name="username" placeholder="Как вас зовут?">
           <label for="feedback-email" class="visually-hidden">Электронная почта</label>
-          <input id="feedback-email" type="email" name="email" placeholder="Ваша почта для ответа?">
+          <input class="info-box" id="feedback-email" type="email" name="email" placeholder="Ваша почта для ответа?">
           <label for="feedback-text" class="visually-hidden">Напишите что-нибудь</label>
-          <textarea id="feedback-text" name="text" placeholder="Напишите что-нибудь..." ></textarea>
+          <input class="textarea" id="feedback-text" type="text" name="text" placeholder="Напишите что-нибудь..." >
           <input class="button" type="submit"  value="Отправить">
-          <button class="modal-close" type="button">Закрыть</button>
+          <button class="modal-close visually-hidden" type="button">Закрыть</button>
       </form>
 
   </body>

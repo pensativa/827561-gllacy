@@ -11,10 +11,6 @@ body {
   color: #ffffff;
 }
 
-.visually-hidden {
-    font-size: 0;
-}
-
 body a:hover,
 body a:focus {
     color: #e84d37;
@@ -90,7 +86,7 @@ body .button {
 }
 
 .main-menu a:hover,
-.main-menu a:focus {
+.main-menu a:focus{
     color: #000000;
     background-color: #f7f6f3;
     border-radius: 15px;
@@ -186,6 +182,7 @@ body .button {
     width: 21px;
     height: 19px;
     background: url("../img/enter.svg") no-repeat;
+Что я не правильно делаю?
 }*/
 
 .sub-login {
@@ -242,9 +239,10 @@ tr {
     }
     
 /*РАБОЧЕЕ ВРЕМЯ*/
-.working-info p {
+
+/*.working-info p {
     text-align: right;
-}
+}*/
 
 .phone {
     font-size: 22px;
@@ -314,9 +312,14 @@ tr {
 }
 
 .visability {
-    display: none;
+    opacity: 0;
 }
-/*Не знаю как правильно вернуть*/
+
+.visability:hover,
+.visability:focus {
+    opacity: 1;
+}
+
 
 .catalog-list h3 {
     font-size: 17px;
@@ -395,19 +398,16 @@ tr {
 .dispatch {
     width: 560px;
     height: 220px;
-/*    background: #f8f7f4 linear-gradient(to bottom right,
+    background-image: repeating-linear-gradient(-60deg,
 #f8f7f4 5px,
 #92cdff 5px, #92cdff 10px,
 #f8f7f4 10px, #f8f7f4 15px, 
 #fe9e90 15px, #fe9e90 20px,
 #f8f7f4 20px, #f8f7f4 25px,
-#92cdff 25px, #92cdff 30px,
-#f8f7f4 30px, #f8f7f4 35px, 
-#fe9e90 35px, #fe9e90 40px,
-#f8f7f4 40px);
+#92cdff 25px);
+    
+/*Теперь не могу понять, как добавить второй фон..*/
     border-radius: 15px;
-Не могу понять, как его клонировать*/
-background: #ffffff url("../img/post-bg.png");
 }
 
 .dispatch p {
@@ -457,13 +457,16 @@ background: #ffffff url("../img/post-bg.png");
     list-style: none;  
 }
 
+.social-button div{
+    opacity: 0.8; 
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
 .social-button-tw {
     width: 32px;
     height: 32px;
     background:  url("../img/tw.svg") no-repeat;
-    opacity: 0.7; 
-    border: 2px solid #b1c1b8;
-    border-radius: 50%;
 }
 
 
@@ -472,37 +475,29 @@ background: #ffffff url("../img/post-bg.png");
     width: 32px;
     height: 32px;
     background:  url("../img/inst.svg") no-repeat;
-    opacity: 0.7; 
-    border: 2px solid #b1c1b8;
-    border-radius: 50%;
 }
 
 .social-button-fb {
     width: 32px;
     height: 32px;
     background:  url("../img/fb.svg") no-repeat;
-    opacity: 0.7; 
-    border: 2px solid #b1c1b8;
-    border-radius: 50%;
 }
 
 .social-button-vk {
     width: 32px;
     height: 32px;
     background:  url("../img/vk.svg") no-repeat;
-    opacity: 0.7; 
-    border: 2px solid #b1c1b8;
-    border-radius: 50%;
 }
 
-.social-buttons a:hover,
+.social-button div:hover,
 .social-buttons a:focus {
     opacity: 1;
 }
 
-.social-buttons a:active {
+.social-button div:active {
     opacity: 0.9;
 }
+
 
 /*ДОПОЛНИТЕЛЬНАЯ ИНФО*/
 .sub-info {
@@ -571,7 +566,7 @@ background: #ffffff url("../img/post-bg.png");
     list-style: none;
 }
 
-.container h1 {
+.page-title h1 {
     font-size: 35px;
 }
 
@@ -692,4 +687,8 @@ fieldset {
     border-radius: 50%;
     background-color: #ffffff;
     color: #323232;
+}
+
+.visually-hidden {
+    font-size: 0;
 }

@@ -20,7 +20,7 @@
                 </a>
                 <ul class="main-menu">
                     <li class="catalog"><a href="#" aria-label="Каталог">Каталог</a>
-                        <ul class="modal sub-menu">
+                        <ul class="sub-menu">
                             <li class="imp-item">Новинки</li>
                             <li><a href="catolog-creamy.html">Сливочное</a></li>
                             <li><a href="#">Щербеты</a></li>
@@ -40,7 +40,7 @@
                                 <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
                         </svg>
                     </a>
-                        <form class="modal sub-search" action="#" method="get">
+                        <form class="sub-search" action="#" method="get">
                             <input class="search-box" type="search" name="search" placeholder="Что ищем?">
                         </form>
                 </div>
@@ -55,9 +55,7 @@
                         </svg>
                         <span>Вход</span>
                     </a>
-                </div>
-                <div class="modal sub-login">
-                    <form  action="#" method="post">
+                    <form class="sub-login"  action="#" method="post">
                         <label for="login-email" class="visually-hidden">Электронная почта</label>
                         <input  class="login-box" id="login-email" type="email" name="email" placeholder="Электронная почта">
                         <label for="login-password" class="visually-hidden">Пароль</label>
@@ -67,6 +65,9 @@
                          <button class="exit-button button" type="submit">Войти</button>
                     </form>
                 </div>
+               
+                    
+                
           
                 <div class="basket">
                     <a class="basket-button" href="#" aria-label="Корзина">
@@ -241,7 +242,7 @@
 
       </footer>
       
-      <form class="mobal modal-feedback" action="#" method="post">
+      <form class="modal modal-feedback" action="#" method="post">
           <h2>Мы вам обязательно ответим!</h2>
           <label for="feedback-name" class="visually-hidden">Ваше имя</label>
           <input class="info-box" id="feedback-name" type="text" name="username" placeholder="Как вас зовут?">
@@ -249,8 +250,8 @@
           <input class="info-box" id="feedback-email" type="email" name="email" placeholder="Ваша почта для ответа?">
           <label for="feedback-text" class="visually-hidden">Напишите что-нибудь</label>
           <textarea class="textarea" id="feedback-text" name="text" placeholder="Напишите что-нибудь..." ></textarea>
-          <input class="button" type="submit"  value="Отправить">
-          <button class="modal-close visually-hidden" type="button">Закрыть</button>
+          <input class="feedback-button button" type="submit"  value="Отправить">
+          <button class="modal-close" type="button">Закрыть</button>
       </form>
     </div>
   </body>

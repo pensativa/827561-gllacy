@@ -16,7 +16,7 @@
                 </a>
                 <ul class="main-menu">
                     <li class="catalog active"><a href="#" aria-label="Каталог">Каталог</a>
-                        <ul class="modal sub-menu">
+                        <ul class="sub-menu">
                             <li class="imp-item">Новинки</li>
                             <li><a href="catolog-creamy.html">Сливочное</a></li>
                             <li><a href="#">Щербеты</a></li>
@@ -37,7 +37,7 @@
                                 <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
                            </svg>
                     </a>
-                    <form class="modal sub-search" action="#" method="get">
+                    <form class="sub-search" action="#" method="get">
                         <input class="search-box" type="search" name="search" placeholder="Что ищем?">
                     </form>
                 </div>
@@ -52,24 +52,23 @@
                         </svg>
                         <span>Вход</span>
                     </a>
-                </div>
-                <div class="modal sub-login">
-                    <form  action="#" method="post">
+                    <form class="sub-login"  action="#" method="post">
                         <label for="login-email" class="visually-hidden">Электронная почта</label>
                         <input class="login-box" id="login-email" type="email" name="email" placeholder="Электронная почта">
                         <label for="login-password" class="visually-hidden">Пароль</label>
                         <input class="login-box" id="login-password" type="password" name="password" placeholder="Пароль">
                         <a class="login-info" href="#">Забыли пароль?</a>
                         <a class="login-info" href="#">Новая регистрация</a>
-                         <button class="button" type="submit">Войти</button>
+                         <button class="exit-button button" type="submit">Войти</button>
                     </form>
+                
                 </div>
+                
                 
                 <div class="basket-red">
                     <a href="#">2 товара</a>
-                </div>
-                
-                <div class="modal basket-contents">
+                    
+                    <div class="basket-contents">
                     <table>
                         <tr>
                             <td>X</td>
@@ -90,6 +89,9 @@
                     <p class="sum">Итого: 750 руб.</p>
                     <button class="basket-full-button button" type="submit">Оформить заказ</button>
                 </div>
+                </div>
+                
+                
             </div>
             </div>
             
@@ -182,8 +184,8 @@
                     <li class="catalog-item">
                         <img class="border-img" src="img/icecream-with-orange-jam.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                         <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-                        <p>310₽<span>/кг</span></p>
                         <a class="visability button" href="#">Быстрый просмотр</a>
+                        <p>310₽<span>/кг</span></p>
                     </li>
                     <li class="catalog-item">
                         <img class="border-img" src="img/icecream-with-coffee-and-chocolate.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
@@ -261,6 +263,8 @@
                     <li class="pagination-item"><a href="#" aria-label="Пятая страница">5</a></li>
                </ul> 
             </div>
+            
+            <div class="catalog-underline"></div>
         </main>
         
         <footer class="main-footer">

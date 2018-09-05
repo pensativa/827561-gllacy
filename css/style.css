@@ -178,7 +178,6 @@ input[type="radio"].visually-hidden {
     padding: 0 10px 13px 20px;
     margin-top: -4px;
     text-align: left;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .imp-item::after {
@@ -287,15 +286,20 @@ input[type="radio"].visually-hidden {
     background-color: #ffffff;
     border: solid 1px #d3d3d2;
     border-radius: 5px;
+    outline: 0;
 }
 
 .search-box:hover,
 .search-box:focus {
     border: solid 2px rgba(154, 154, 154, 0.52);
+    padding: 0 13px;
+
 }
 
 .search-box:active {
     border: solid 2px rgba(46, 136, 228, 0.52);
+    padding: 0 13px;
+
 }
 
 /*LOGIN*/
@@ -345,19 +349,22 @@ input[type="radio"].visually-hidden {
     margin: 20px 17px 0 19px;
     width: 211px;
     min-height: 42px;
+    padding: 1px 13px;
     border-radius: 5px;
     background-color: #ffffff;
     border: solid 1px #d3d3d2;
-    padding: 0 13px;
+    
 }
 
 .login-box:hover,
 .login-box:focus {
     border: solid 2px rgba(154, 154, 154, 0.52);
+    padding: 0 12px;
 }
 
 .login-box:active {
     border: solid 2px rgba(46, 136, 228, 0.52);
+    padding: 0 12px;
 }
 
 .sub-login a {
@@ -840,7 +847,6 @@ tr {
 .catalog-item:focus {
     background: rgba(255, 255, 255, 0.2);
     width: 293px;
-    margin-left: -23px;
     margin-bottom: -40px;
     box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
     border-radius: 5px;
@@ -903,7 +909,7 @@ tr {
     background: #ddd1b7 url("../img/wafer.jpg");
     border-radius: 15px;
     margin: 0 26px;
-    margin-bottom: 28px;
+    margin-bottom: 40px;
 }
 
 .head-advantages {
@@ -920,6 +926,7 @@ tr {
     flex-wrap: wrap;
 
     padding: 0 22px 0 76px;
+    margin: 0;
     
 }
 
@@ -1049,17 +1056,20 @@ tr {
     background-color: #ffffff;
     border: solid 1px rgba(178, 178, 178, 0.52);
     margin: 0 20px;
-    padding: 0 13px;
+    padding: 1px 13px;
     font-size: 16px;
+    outline: 0;
 }
 
 .email-box:hover,
 .email-box:focus {
     border: solid 2px rgba(154, 154, 154, 0.52);
+    padding: 0 12px;
 }
 
 .email-box:active {
     border: solid 2px rgba(46, 136, 228, 0.52);
+    padding: 0 12px;
 }
 
 .news-button {
@@ -1325,7 +1335,7 @@ tr {
     background-color: #ffffff;
     border: solid 1px rgba(178, 178, 178, 0.52);
     border-radius: 5px;
-    padding: 0 13px;
+    padding: 1px 13px;
     font-size: 16px;
     margin-bottom: 20px;
 }
@@ -1333,10 +1343,12 @@ tr {
 .info-box:hover,
 .info-box:focus {
     border: solid 2px rgba(154, 154, 154, 0.52);
+    padding: 0 12px;
 }
 
 .info-box:active {
     border: solid 2px rgba(46, 136, 228, 0.52);
+    padding: 0 12px;
 }
 
 .textarea {
@@ -1353,10 +1365,12 @@ tr {
 .textarea:hover,
 .textarea:focus {
     border: solid 2px rgba(154, 154, 154, 0.52);
+    padding: 10px 14px;
 }
 
 .textarea:active {
     border: solid 2px rgba(46, 136, 228, 0.52);
+    padding: 10px 14px;
 }
 
 .feedback-button {
@@ -1458,8 +1472,7 @@ fieldset {
     appearance: none;
     border-radius: 50px;
     color: #ffffff;
-    padding-left: 10px;
-    padding-top: 8px;
+    padding: 8px 10px;
     font-size: 16px;
 }
 
@@ -1469,7 +1482,7 @@ fieldset {
 
 .select-arrow {
     position: absolute;
-    top: 16px;
+    top: 34px;
     right: 25px;
 }
 
@@ -1705,6 +1718,7 @@ fieldset {
     color: #ffffff;
     transform: translate(9px, 26px);
     font-size: 16px;
+    outline: 0;
 }
 
 .filter-button:hover,

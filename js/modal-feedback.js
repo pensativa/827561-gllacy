@@ -42,6 +42,8 @@
     evt.preventDefault();
     popup.classList.remove("modal-show");
     popup.classList.remove("modal-error");
+    overlay.classList.remove("modal-show");
+    overlay.classList.remove("modal-error");
   });
 
   form.addEventListener("submit", function (evt) {

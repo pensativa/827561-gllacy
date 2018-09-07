@@ -84,6 +84,8 @@
         <div class="working-info">
           <p class="hours">С 10 до 20, ежедневно</p>
           <p class="phone">8 812 450-25-25</p>
+          <p class="hours">С 10 до 20, ежедневно</p>
+          <p class="phone">8 812 450-25-25</p>
         </div>
       </header>
       
@@ -228,7 +230,8 @@
         </div>
       </footer>
       
-      <form class="modal modal-feedback" action="#" method="post">
+      <section class="modal modal-feedback">
+        <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
           <h2>Мы обязательно вам ответим!</h2>
           <label for="feedback-name" class="visually-hidden">Ваше имя</label>
           <input class="info-box" id="feedback-name" type="text" name="username" placeholder="Как вас зовут?">
@@ -238,9 +241,11 @@
           <textarea class="textarea" id="feedback-text" name="text" placeholder="Напишите что-нибудь..." ></textarea>
           <input class="feedback-button button" type="submit"  value="Отправить">
           <button class="modal-close" type="button">Закрыть</button>
-      </form>
+        </form>
+      </section>
     </div>
       
     <div class="modal-overlay"></div>
+    <script src="js/modal-feedback.js"></script>
   </body>
 </html>

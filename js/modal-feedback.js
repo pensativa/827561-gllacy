@@ -2,6 +2,8 @@
   var link = document.querySelector(".contacts-button");
   
   var popup = document.querySelector(".modal-feedback");
+
+  var overlay = document.querySelector(".modal-overlay");
   
   var close = popup.querySelector(".modal-close");
 
@@ -25,6 +27,7 @@
   link.addEventListener("click", function (evt) {
   	evt.preventDefault();
   	popup.classList.add("modal-show");
+  	overlay.classList.add("modal-show");
   	username.focus();
   });
 

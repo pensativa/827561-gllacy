@@ -1591,6 +1591,10 @@ fieldset {
     outline: 0; 
 }
 
+.sorting select::-ms-expand {
+        display: none;
+    }
+
 .select-arrow {
     position: absolute;
     top: 34px;

@@ -708,7 +708,6 @@ tr {
     display: block;
     width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 /*CARUSEL*/
@@ -852,7 +851,7 @@ tr {
         flex-wrap: wrap;
     
     margin: 0 27px;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 }
 
 .offer {
@@ -1060,7 +1059,7 @@ tr {
     font-weight: normal;
     color: #323232;
     margin: 0;
-    padding: 25px 20px 6px;
+    padding: 25px 20px 22px;
 }
 
 .item-advantages {
@@ -1263,14 +1262,13 @@ tr {
     background-color: #ffffff;
     color: #323232;
     
-    padding: 25px 25px 0 25px;
+    padding: 26px 25px 0 25px;
     border-radius: 15px;
 }
 
 .main-contacts {
     font-size: 18px;
     font-weight: bold;
-    line-height: 24px;
 }
 
 .contacts p {
@@ -1278,8 +1276,13 @@ tr {
     line-height: 20px;
 }
 
+.contacts p:first-child {
+    margin-bottom: -4px;
+}
+
 .contacts p:nth-child(2) {
-    padding-bottom: 16px;
+    line-height: 24px;
+    padding-bottom: 12px;
 }
 
 .contacts p:nth-child(3) {
@@ -1309,7 +1312,7 @@ tr {
             align-items: center;
 
     padding: 1px 27px 0;
-    margin-top: 15px;
+    margin-top: 13px;
     
 }
 
@@ -1398,7 +1401,7 @@ tr {
 /*OTHER INFO*/
 .footer-info {
     width: 372px;
-    margin-top: -6px;
+    margin-top: -1px;
 }
 
 .sub-info {

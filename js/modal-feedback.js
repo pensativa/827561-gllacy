@@ -27,7 +27,7 @@
   link.addEventListener("click", function (evt) {
   	evt.preventDefault();
   	popup.classList.add("modal-show");
-  	overlay.classList.add("modal-show");
+  	overlay.classList.add("modal-overlay-show");
   	username.focus();
   });
 
@@ -42,7 +42,7 @@
     evt.preventDefault();
     popup.classList.remove("modal-show");
     popup.classList.remove("modal-error");
-    overlay.classList.remove("modal-show");
+    overlay.classList.remove("modal-overlay-show");
     overlay.classList.remove("modal-error");
   });
 

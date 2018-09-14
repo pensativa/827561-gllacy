@@ -369,7 +369,6 @@ img {
     margin-right: 137px;
 }
 /*BASKET*/
-
 .basket {
     margin-left: 8px;
     padding-top: 20px;
@@ -1646,7 +1645,7 @@ fieldset {
     background-position: 0 0;
     opacity: 0.8;
 }
-.filter-input-checkbox:hover+label::after, .filter-input-checkbox:focus+label::after {
+.filter-input-checkbox:hover+label::before, .filter-input-checkbox:focus+label::before {
     content: "";
     opacity: 1;
 }
